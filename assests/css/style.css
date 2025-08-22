@@ -207,3 +207,96 @@ section {
 	left: 4.5rem;
 	z-index: 100;
 }
+
+/* Why Join Section */
+.why {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.why h1 {
+	text-align: center;
+	font-family: Bangers;
+	font-size: 6rem;
+	margin-bottom: 4rem;
+	font-weight: 400;
+}
+
+.why h1 span:first-child {
+	color: #FACC15;
+	background-color: #1E3A8A;
+	padding: 0.5rem 2.5rem 0.5rem 2rem;
+}
+
+.why h1 span:nth-child(2) {
+	color: #1E3A8A;
+	background-color: #FACC15;
+	padding: 0.5rem 1rem;
+}
+
+.why article {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2rem;
+	background-color: #EBEBEB;
+	border-radius: 1.5rem;
+	font-size: 2rem;
+	color: #1E3A8A;
+	padding: 1.5rem 4rem 1.5rem 1.5rem;
+	width: 63rem;
+}
+
+.why article img {
+	background-color: #1E3A8A;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+/* Call to Action Section */
+
+.call {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	min-height: 60vh;
+}
+
+.call h1 {
+	color: #1E3A8A;
+	font-family: Bangers;
+	font-size: 4.6875rem;
+	font-weight: 400;
+	padding: 4rem 4rem 0;
+	align-self: flex-start;
+}
+
+.call h1 span {
+	background-color: #FACC15;
+	border-radius: 1.5rem;
+	padding: 0 0.5rem 0;
+}
+
+.call p {
+	color: #1E3A8A;
+	text-align: center;
+	font-family: Belanosima;
+	font-size: 2rem;
+	font-weight: 400;
+	padding: 0 10rem;
+}
+
+.call a {
+	color: #FACC15;
+	background-color: #1E3A8A;
+	border-radius: 1.5rem;
+	text-align: center;
+	font-family: Belanosima;
+	font-size: 3rem;
+	font-weight: 400;
+	padding: 0.5rem 2rem;
+}
