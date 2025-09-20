@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: sticky;  
+    background-color: #FACC15;
+    width: 100%;
+    height: 11vh;
+    display: flex; 
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 20%;
+}
+
+header nav a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.logo {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.intro {
+    background-color: #D9D9D9;
+    padding: 4rem 2rem; 
+    text-align: center;
+}
+
+.intro h1 {
+  margin-top: 9.53125rem;
+  margin-bottom: 5.0625rem;
+	color: #FACC15;
+	text-align: center;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 10rem;
+	font-weight: 400;
+  font-family: 'Bangers', cursive;
+}
+
+.outlined-text {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5714rem;
+  font-family: 'Belanosima', sans-serif;
+  color: #FACC15;
+  z-index: 2;
+  margin: 0 5.78125rem 7.84375rem 5.78125rem;
+  text-align: center;
+}
+
+.outlined-text::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "Welcome to our Blog page — a space where members share what’s happening behind the scenes at STEM October 11th District Hack Club. From session recaps and hackathon experiences to tech tips and personal reflections, every post here is written by a member of our club.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 6px #1E3A8A;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.pp {
+  text-align: center;
+  font-size: 6.8572rem;
+  font-family: 'Bangers', cursive;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.pfeatured {
+  position: relative;
+  display: inline-block;
+  color: #1E3A8A;
+  z-index: 2;
+}
+
+.pfeatured::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "FEATURED";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 10px #FACC15;
+  white-space: pre-wrap;
+  width: 100%;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pposts {
+  color: #FACC15;
+  background-color: #1E3A8A;
+  border-radius: 12px;
+  padding: 4px 20px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.outlined-text2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5714rem;
+  font-family: 'Belanosima', sans-serif;
+  color: #FACC15;
+  z-index: 2;
+  margin: 0 2.3446rem 1.8735rem;
+}
+
+.outlined-text2::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "Check out our most recent or popular blog entries below. These are personal insights from students who build, break, and learn new things every week.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 6px #1E3A8A;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+
+  .grid {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 480px 530px 440px;
+    grid-template-rows: 460px; 
+    /*width: 90vw;
+    height: 90vh;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    gap: 0.5px;
+    grid-template-rows: 460px; /* force row 2 height */
+  }
+
+  .grid2 {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 490px 470px 490px;
+    grid-template-rows: 500px; 
+    grid-template-rows: 500px;
+
+  }
+
+  .polygon {
+    background: lightblue;
+    border: 0.5px solid #FACC15;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+.p1 { 
+    clip-path: polygon(0% 0%, 94.6% 0%, 100% 89%, 0% 100%);
+    aspect-ratio: 480 / 460;
+    width: 100%;
+    max-width: 480px;
+    background: linear-gradient(
+    to bottom,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center; 
+    padding: 1.4285rem;
+    /*transform: scale(0.75);
+    transform-origin: top left;*/
+    }
+.p2 {
+    clip-path: polygon(100% 0%, 0% 0%, 6.5% 100%, 94.5% 76.2%);
+    aspect-ratio: 530 / 460;
+    width: 100%;
+    max-width: 530px;
+    margin-left: -10px;
+    background: linear-gradient(
+    to bottom,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center; 
+    padding: 1.4285rem;
+    /*transform: scale(1.075);
+    transform-origin: top center;*/
+}
+.p3 {
+    clip-path: polygon(100% 0%, 10.9% 0%, 0% 90.7%, 100% 100%);
+    aspect-ratio: 440 / 520;
+    width: 100%;
+    max-width: 440px;
+    margin-left: -25px;
+    background: linear-gradient(
+    to bottom,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 1.4285rem;
+    /*transform: scale(1);
+    transform-origin: top right;*/
+}
+.p4 {
+    clip-path: polygon(93.4% 0%, 100% 100%, 0% 100%, 0% 9.9%);
+    aspect-ratio: 520 / 500;
+    width: 100%;
+    max-width: 520px;
+    margin-top: -35px;
+    background: linear-gradient(
+    to top,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center; 
+    padding: 1.4285rem;
+    /*transform: scale(0.806);
+    transform-origin: bottom left;*/
+}
+.p5 {
+    clip-path: polygon(100% 0%, 0% 19.5%, 7.4% 100%, 87.5% 100%);
+    aspect-ratio: 470 / 570;
+    width: 100%;
+    max-width: 470px;
+    align-self: start;
+    margin-top: -105px;
+    margin-left: -15px;
+    background: linear-gradient(
+    to top,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center; 
+    padding: 1.4285rem;
+    /*transform: scale(0.9);
+    transform-origin: bottom center;*/
+}
+.p6 {
+    clip-path: polygon(100% 100%, 100% 12.4%, 10.5% 0%, 0% 100%);
+    aspect-ratio: 490 / 450;
+    width: 100%;
+    max-width: 490px;
+    margin-top: -35px;
+    margin-left: -50px;
+    background: linear-gradient(
+    to top,
+    rgba(30,58,138,1) 0%,
+    rgba(30,58,138,0.8) 10%,
+    rgba(30,58,138,0.4) 40%,
+    rgba(30,58,138,0) 100%
+  ), url("Spongebob.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center; 
+    padding: 1.4285rem;
+    /*transform: scale(1);
+    transform-origin: bottom right;*/
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.p1title, .p2title, .p3title, .p4title, .p5title, .p6title {
+  color: #FACC15;
+  font-family: 'Bangers', cursive;
+  font-size: 3.9286rem;
+} 
+
+.p1text, .p2text, .p3text, .p4text, .p5text, .p6text {
+  color: #FACC15;
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1.7143rem;
+}
+
+.ppp {
+  margin-left: 5.3vw;
+  font-size: 6.8572rem;
+  font-family: 'Bangers', cursive;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.allmembers {
+  position: relative;
+  display: inline-block;
+  color: #1E3A8A;
+  z-index: 2;
+}
+
+.allmembers::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "ALL MEMBERS";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 10px #FACC15;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.blogs {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.blogs::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "BLOGS";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 10px #FACC15;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.outlined-text3 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.6865rem;
+  font-family: 'Belanosima', sans-serif;
+  color: #FACC15;
+  z-index: 2;
+  margin: 0 2.3446rem 1.8735rem;
+}
+
+.outlined-text3::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "Browse all published posts from our members. Click on any title to read the full entry.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 6px #1E3A8A;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.pppp {
+  position: relative;
+  display: block;
+  margin: 5rem auto 4rem auto;
+  color: #1E3A8A;
+  z-index: 2;
+  text-align: center;
+  font-size: 6.8572rem;
+  font-family: 'Bangers', cursive;
+}
+
+.pppp::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "WANT TO SHARE YOUR THOUGHTS?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 10px #FACC15;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.outlined-text4 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.6865rem;
+  font-family: 'Belanosima', sans-serif;
+  color: #FACC15;
+  z-index: 2;
+  margin: 0 2.3446rem 20rem;
+}
+
+.outlined-text4::before {
+  content: attr(data-text);
+  content: attr(data-text);
+  content: "We welcome all club members to write about their experiences — whether it’s your thoughts after a session, a summary of a project, or just something cool you learned! Ask a leader how to submit your post and get featured here.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 6px #1E3A8A;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+
+:root {
+  --header-h: 11vh;
+  --side-pad: 4%;
+  --gap: 2%;
+  --cards-height: calc(100vh - var(--header-h));
+}
+
+.cards-area {
+  padding-left: var(--side-pad);
+  padding-right: var(--side-pad);
+  box-sizing: border-box;
+  height: var(--cards-height);
+  margin-bottom: 3vh;
+}
+
+.cards-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.card {
+  background: var(--bg, #ccc) center/contain no-repeat;
+  background-color: rgb(109, 223, 231);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2% 3%;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-title {
+  margin: 0;
+  color: #FACC15;
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.25rem, 2.2vw, 2.6rem);
+  transform: skewX(-10deg);
+  text-shadow: 0 2px 2px rgba(0,0,0,0.12);
+}
+
+.card-author {
+  color: #FACC15;
+  font-family: 'Belanosima', sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1.2rem);
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+
+@media (max-width: 800px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 3.2vw;
+  }
+  .cards-area { height: auto; padding-left: 6%; padding-right: 6%; }
+  .card-title { font-size: clamp(1.1rem, 4vw, 2rem); }
+}
+
+.cards-area { margin-top: 2vh; }
+
+.card-image img { max-width: 100%; height: auto; display: block; }
+
+@media only screen and (max-width: 414px) {
+  .grid, .grid2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  }
